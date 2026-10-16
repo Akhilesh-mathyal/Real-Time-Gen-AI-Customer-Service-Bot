@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Acme Support</title><link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"></head>
+<body><main><header><div><p class="eyebrow">ACME SHOP</p><h1>Customer support</h1></div><span id="mode" class="badge">Ready</span></header>
+<section id="chat" class="chat" aria-live="polite"><article class="message assistant">Hi! I’m the Acme Shop assistant. I can help with shipping, returns, billing, and account access. How can I help?</article></section>
+<section class="suggestions" aria-label="Suggested questions"><button>Where is my order?</button><button>What is your return policy?</button><button>I need to reset my password</button></section>
+<form id="chatForm"><label for="message" class="sr-only">Your message</label><textarea id="message" rows="2" maxlength="2000" placeholder="Type your question…" required></textarea><button id="send" type="submit">Send</button></form>
+<aside><strong>Privacy tip:</strong> Please don’t send passwords, card numbers, or verification codes. <button id="handoff" class="link">Contact human support</button></aside>
+</main><script src="{{ url_for('static', filename='app.js') }}"></script></body></html>
